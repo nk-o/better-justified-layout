@@ -52,7 +52,7 @@ function isThisWidowRowCentered(layout) {
 
 }
 
-describe('justified-layout', function () {
+describe('better-justified-layout', function () {
 
 	it('should create additional rows if it won\'t fit within constraints', function () {
 

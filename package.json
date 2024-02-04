@@ -1,5 +1,5 @@
 {
-  "name": "justified-layout",
+  "name": "better-justified-layout",
   "version": "4.1.0",
   "description": "Pass in box sizes and get back sizes and coordinates for a justified layout",
   "keywords": [
@@ -19,16 +19,16 @@
     "lint": "eslint .",
     "test": "nyc mocha",
     "build": "npm run build-dist && npm run build-min",
-    "build-dist": "mkdir -p dist && browserify -r $npm_package_main:justified-layout > dist/justified-layout.js",
-    "build-min": "uglifyjs dist/justified-layout.js --comments -o dist/justified-layout.min.js",
+    "build-dist": "mkdir -p dist && browserify -r $npm_package_main:better-justified-layout > dist/better-justified-layout.js",
+    "build-min": "uglifyjs dist/better-justified-layout.js --comments -o dist/better-justified-layout.min.js",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
     "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:flickr/justified-layout.git"
+    "url": "git@github.com:nk-o/better-justified-layout.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "browserify": "^17.0.0",
     "coveralls": "^3.1.0",
