@@ -37,8 +37,10 @@ function createNewRow(layoutConfig, layoutData) {
     spacing: layoutConfig.boxSpacing.horizontal,
     targetRowHeight: layoutConfig.targetRowHeight,
     targetRowHeightTolerance: layoutConfig.targetRowHeightTolerance,
-    edgeCaseMinRowHeight: 0.5 * layoutConfig.targetRowHeight,
-    edgeCaseMaxRowHeight: 2 * layoutConfig.targetRowHeight,
+    edgeCaseMinRowHeight:
+      layoutConfig.edgeCaseMinRowHeight * layoutConfig.targetRowHeight,
+    edgeCaseMaxRowHeight:
+      layoutConfig.edgeCaseMaxRowHeight * layoutConfig.targetRowHeight,
     rightToLeft: false,
     isBreakoutRow: isBreakoutRow,
     widowLayoutStyle: layoutConfig.widowLayoutStyle,
@@ -195,6 +197,8 @@ export default function (input, config) {
     boxSpacing: 10,
     targetRowHeight: 320,
     targetRowHeightTolerance: 0.25,
+    edgeCaseMinRowHeight: 0.5,
+    edgeCaseMaxRowHeight: 2.5,
     maxNumRows: Number.POSITIVE_INFINITY,
     forceAspectRatio: false,
     showWidows: true,
