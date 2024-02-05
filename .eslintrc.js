@@ -1,11 +1,12 @@
 module.exports = {
-
-	extends: 'flickr',
-
-	env: {
-		node: true
-	},
-
-	rules: {}
-
+  extends: "flickr",
+  parserOptions: {
+    sourceType: "module",
+    ecmaVersion: 2018,
+  },
+  env: {
+    node: true,
+    jest: true,
+  },
+  rules: {},
 };

@@ -52,7 +52,9 @@ Which gives you everything you need to make something like this:
 ## Easy Usage
 
 ```js
-var layoutGeometry = require('better-justified-layout')([1.33, 1, 0.65] [, config])
+import justifiedLayout from 'better-justified-layout';
+
+const layoutGeometry = justifiedLayout([1.33, 1, 0.65]);
 ```
 
 
