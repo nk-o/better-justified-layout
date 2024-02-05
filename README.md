@@ -3,6 +3,8 @@
 > A fork of `flickr/justified-layout` containing different improvements.
 > We maintain it because it is used in <https://github.com/nk-o/flickr-justified-gallery> and <https://visualportfolio.co/>
 
+![better-justified-layout.min.js](https://img.badgesize.io/nk-o/better-justified-layout/master/dist/better-justified-layout.min.js?compression=gzip)
+
 Pass in box sizes and get back sizes and coordinates for a nice justified layout like that seen all
 over Flickr. The <a href="https://visualportfolio.co/justified/">Visual Portfolio site</a> is a great example.
 
