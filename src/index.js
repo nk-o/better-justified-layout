@@ -28,6 +28,7 @@ function createNewRow(layoutConfig, layoutData) {
   }
 
   return new Row({
+    index: layoutData._rows.length,
     top: layoutData._containerHeight,
     left: layoutConfig.containerPadding.left,
     width:

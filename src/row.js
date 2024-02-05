@@ -5,6 +5,7 @@
  *
  * @param {Object} layoutConfig - The same as that passed
  * @param {Object} Initialization parameters. The following are all required:
+ * @param params.index {Number} The index of this row
  * @param params.top {Number} Top of row, relative to container
  * @param params.left {Number} Left side of row relative to container (equal to container left padding)
  * @param params.width {Number} Width of row, not including container padding
@@ -18,6 +19,9 @@
  * @constructor
  */
 const Row = function (params) {
+  // The index of this row
+  this.index = params.index;
+
   // Top of row, relative to container
   this.top = params.top;
 
@@ -222,6 +226,7 @@ Row.prototype = {
 
     // Compute item geometry based on newHeight.
     this.items.forEach(function (item) {
+      item.row = this.index;
       item.top = this.top;
       item.width = item.aspectRatio * this.height * clampedToNativeRatio;
       item.height = this.height;

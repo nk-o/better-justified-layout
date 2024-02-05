@@ -1,34 +1,38 @@
 {
-	"containerHeight": 710,
-	"widowCount": 1,
-	"boxes": [
-		{
-			"aspectRatio": 1,
-			"top": 10,
-			"width": 340,
-			"height": 340,
-			"left": 10
-		},
-		{
-			"aspectRatio": 1,
-			"top": 10,
-			"width": 340,
-			"height": 340,
-			"left": 360
-		},
-		{
-			"aspectRatio": 1,
-			"top": 10,
-			"width": 340,
-			"height": 340,
-			"left": 710
-		},
-		{
-			"aspectRatio": 1,
-			"top": 360,
-			"width": 340,
-			"height": 340,
-			"left": 10
-		}
-	]
+  "containerHeight": 710,
+  "widowCount": 1,
+  "boxes": [
+    {
+      "aspectRatio": 1,
+      "top": 10,
+      "width": 340,
+      "height": 340,
+      "left": 10,
+      "row": 0
+    },
+    {
+      "aspectRatio": 1,
+      "top": 10,
+      "width": 340,
+      "height": 340,
+      "left": 360,
+      "row": 0
+    },
+    {
+      "aspectRatio": 1,
+      "top": 10,
+      "width": 340,
+      "height": 340,
+      "left": 710,
+      "row": 0
+    },
+    {
+      "aspectRatio": 1,
+      "top": 360,
+      "width": 340,
+      "height": 340,
+      "left": 10,
+      "row": 1
+    }
+  ]
 }
